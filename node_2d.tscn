@@ -1,3 +1,50 @@
-[gd_scene format=3 uid="uid://cfy5kcjbxha83"]
+[gd_scene load_steps=3 format=3 uid="uid://cfy5kcjbxha83"]
+
+[ext_resource type="Texture2D" uid="uid://b5jbxd8ibieq6" path="res://sprites/placeholder/Tilemap/tilemap_packed.png" id="1_y1t2e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lgk53"]
+size = Vector2(18, 18)
 
 [node name="Node2D" type="Node2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(54, 90)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_lgk53")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(0, -7.62939e-06)
+scale = Vector2(1, 1)
+texture = ExtResource("1_y1t2e")
+region_enabled = true
+region_rect = Rect2(0, 0, 18, 18)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(90, 90)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_lgk53")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D2"]
+position = Vector2(0, -7.62939e-06)
+scale = Vector2(1, 1)
+texture = ExtResource("1_y1t2e")
+region_enabled = true
+region_rect = Rect2(0, 0, 18, 18)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(72, 90)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_lgk53")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D3"]
+position = Vector2(0, -7.62939e-06)
+scale = Vector2(1, 1)
+texture = ExtResource("1_y1t2e")
+region_enabled = true
+region_rect = Rect2(0, 0, 18, 18)

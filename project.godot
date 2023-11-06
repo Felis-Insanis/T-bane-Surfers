@@ -11,5 +11,14 @@ config_version=5
 [application]
 
 config/name="T-bane Surfer"
+run/main_scene="res://node_2d.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/size/window_width_override=1600
+window/size/window_height_override=900
+window/stretch/mode="viewport"
